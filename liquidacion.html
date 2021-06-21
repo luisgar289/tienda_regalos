@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script>
+    function ordenarSelect(id_componente)
+    {
+      var selectToSort = jQuery('#' + id_componente);
+      var optionActual = selectToSort.val();
+      selectToSort.html(selectToSort.children('option').sort(function (a, b) {
+        return a.text === b.text ? 0 : a.text < b.text ? -1 : 1;
+      })).val(optionActual);
+    }
+    $(document).ready(function () {
+      ordenarSelect('municipios');
+    });
+  </script>
+	<title> Liquidación </title>
+</head>
+<body>
+<div>
+	<nav>
+		<ul>
+			<li id="inicio"><a href="inicio.html">Inicio</a></li>
+			<li id="novedades"><a href="novedades.html">Novedades</a></li>
+			<li id="categorias"><a href="categorias.html">Categorias</a></li>
+			<li id="liquidacion"><a href="liquidacion.html">Liquidacion</a></li>
+			<li id="contacto"><a href="#contacto">Contacto</a></li>
+			<li id="carrito"><a href="carrito.html">Carrito</a></li>
+		</ul>
+	</nav>
+</div>
+<h1>Liquidacion</h1>
+<h5>Estas son nuestras mejores ofertas, aqui se encuentran las ultimas existencias de productos. Compralos antes de que se agoten.</h5>
+
+<table>
+	<tr>
+		<th>Producto</th>
+		<th>Precio en linea</th>
+		<th>Detalles</th>
+		<th>Imagen</th>
+	</tr>
+	<tr>
+		<td>Taza de chocolates</td>
+		<td>$100</td>
+		<td>Taza de 150ml "Te amo" con 5 pz de chccolates (20% de descuento en tienda fisica)</td>
+		<td><img src="https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/7707750728385.jpg" id="tbtz"></td>
+	</tr>
+	<tr>
+		<td >Oso de peluche</td>
+		<td>$50</td>
+		<td>Oso pequeño de peluche ideal para regalar, 30 cm en bolsa de regalo (10% de descuento en tienda fisica)</td>
+		<td><img src="https://images-na.ssl-images-amazon.com/images/I/71OgvKCg0oL._AC_SX425_.jpg" id="tbos"></td>
+	</tr>
+	<tr>
+		<td>Ramo de rosas</td>
+		<td>$25</td>
+		<td>Docena de rosas envueltas en cartulina negra con dedicatoria personalizada</td>
+		<td><img src="https://flores4u.mx/wp-content/uploads/2019/01/Ramo-rosas-4u.png" id="tbrs"></td>
+	</tr>
+	<tr>
+		<td>Reloj de escritorio</td>
+		<td>$80</td>
+		<td>Reloj de 15x30, ideal para espacios pequeños, con formato de 24 hrs. (Bolsa de regalo al comprar en tienda fisica)</td>
+		<td><img src="https://http2.mlstatic.com/D_NQ_NP_689334-CBT44500358946_012021-O.jpg" id="tbrj"></td>
+	</tr>
+</table>
+<section id="contacto">
+	<h1 id="cont">Contacto</h1>
+	<p></p>
+	<form>
+		<input type="text" name="nombre" placeholder="Introduce tu nombre">
+		<br>
+		<br>
+		<input type="text" name="apellido" placeholder="Introduce tu apellido">
+		<br>
+		<br>
+		<input type="text" name="email" placeholder="Escribe tu correo">
+		<br>
+		<br>
+		<select name="direccion" id="municipios">
+			<option name="colonia">
+				Introduce tu colonia
+			</option>
+			<option name="Ojo de Agua">
+				Ojo de Agua
+			</option>
+			<option name="Huitititla">
+				Huitititla
+			</option>
+			<option name="San Rafael los Teteles">
+				San Rafael los Teteles
+			</option>
+			<option name="Lomas del Pedregal">
+				Lomas del Pedregal
+			</option>
+			<option name="San Isidro">
+				San Isidro
+			</option>
+			<option name="Emiliano Zapata">
+				Emiliano Zapata
+			</option>
+			<option name="2 de Agosto">
+				2 de Agosto
+			</option>
+			<option name="La Presa">
+				La Presa
+			</option>
+			<option name="Ejido Zapotlán de Allende">
+				Ejido Zapotlán de Allende
+			</option>
+			<option name="Acocul la Palma">
+				Acocul la Palma
+			</option>
+			<option name="Ahuehuetitla">
+				Ahuehuetitla
+			</option>
+			<option name="Axatempa">
+				Axatempa
+			</option>
+			<option name="Laguna del Cerrito">
+				Laguna del Cerrito
+			</option>
+			<option name="La Lagunilla">
+				La Lagunilla
+			</option>
+
+			<option name="San Francisco Huatengo">
+				San Francisco Huatengo
+			</option>
+			<option name="Santa Ana Hueytlalpan">
+				Santa Ana Hueytlalpan
+			</option>
+			<option name="Santa María Asunción">
+				Santa María Asunción
+			</option>
+			<option name="El Abra">
+				El Abra
+			</option>
+			<option name="San Vidal">
+				San Vidal
+			</option>
+			<option name="Acocul Guadalupe">
+				Acocul Guadalupe
+			</option>
+			<option name="Napateco">
+				Napateco
+			</option>
+			<option name="Sultepec">
+				Sultepec
+			</option>
+			<option name="Otontepec">
+				Otontepec
+			</option>
+			<option name="Las Piletas">
+				Las Piletas
+			</option>
+			<option name="Santiago Caltengo">
+				Santiago Caltengo
+			</option>
+			<option name="Ejido Mimila">
+				Ejido Mimila
+			</option><option name="San Rafael Loma Bonita">
+				San Rafael Loma Bonita
+			</option>
+			<option name="Buenos Aires">
+				Buenos Aires
+			</option><option name="Las Colmenas">
+				Las Colmenas
+			</option><option name="La Raya">
+				La Raya
+			</option><option name="San Vicente">
+				San Vicente
+			</option><option name="Viveros de la Loma	">
+				Viveros de la Loma	
+			</option><option name="Ejido Huapalcalco">
+				Huapalcalco
+			</option><option name="Pozas Encantadas">
+				Pozas Encantadas
+			</option><option name="La Presa de Santa Ana">
+				La Presa de Santa Ana
+			</option><option name="Atlalpan">
+				Atlalpan
+			</option><option name="San Felipe">
+				San Felipe
+			</option>v<option name="Los Álamos">
+				Los Álamos
+			</option><option name="Guadalupe">
+				Guadalupe
+			</option><option name="Santiago Caltengo">
+				Santiago Caltengo
+			</option><option name="el Paraíso">
+				El Paraíso
+			</option><option name="Rancho Universitario">
+				Rancho Universitario
+			</option><option name="San Rafael el Jagüey">
+				San Rafael el Jagüey
+			</option><option name="San Rafael Loma Bonita">
+				San Rafael Loma Bonita
+			</option><option name="Tulancingo">
+				Tulancingo
+			</option><option name="San Nicolás Cebolletas">
+				San Nicolás Cebolletas
+			</option><option name="	Huajomulco">
+					Huajomulco
+			</option><option name="Jaltepec">
+				Jaltepec
+			</option><option name="San Nicolás el Grande">
+				San Nicolás el Grande
+			</option><option name="Santa María el Chico">
+				Santa María el Chico
+			</option><option name="Tepalzingo">
+				Tepalzingo
+			</option>
+			</option><option name="Rancho San Andrés">
+				Rancho San Andrés
+			</option>
+			</option><option name="San Antonio Farías">
+				San Antonio Farías
+			</option>
+			</option><option name="Zototlán">
+				Zototlán
+			</option>
+			</option><option name="Javier Rojo Gómez	">
+				Javier Rojo Gómez	
+			</option>
+			</option><option name="La Mesa">
+				La Mesa
+			</option>
+			</option><option name="Santa Isabel">
+				Santa Isabel
+			</option></option><option name="San Pablo">
+				San Pablo
+			</option>
+			</option><option name="Magisterio Tulancinguense">
+				Magisterio Tulancinguense
+			</option></option><option name="Pedregal de San Francisco">
+				Pedregal de San Francisco
+			</option>
+			</option><option name="Francisco Villa">
+				Francisco Villa
+			</option>
+			</option><option name="Carlos Salinas de Gortari">
+				Carlos Salinas de Gortari
+			</option>
+			</option><option name="Maroja">
+				Chimilpa
+			</option>
+			</option><option name="San Nicolás el Chico">
+				San Nicolás el Chico
+			</option>
+			</option><option name="Lomas de Tulancingo">
+				Lomas de Tulancingo
+			</option>
+			</option><option name="Metilatla">
+				Metilatla
+			</option>
+			</option><option name="San Francisco">
+				San Francisco
+			</option>
+			</option><option name="Zapotlán de Allende">
+				Zapotlán de Allende
+			</option>
+			</option><option name="San Cayetano">
+				San Cayetano
+			</option>
+			</option><option name="Colonia Progresistas 2000">
+				Colonia Progresistas 2000
+			</option>
+			</option><option name="Rincones de la Hacienda">
+				Rincones de la Hacienda
+			</option>
+			</option><option name="Tollancingo">
+				Tollancingo
+			</option>
+			</option><option name="Los Laureles">
+				Los Laureles
+			</option>
+			</option><option name="Santa Fe">
+				Santa Fe
+			</option>
+			</option><option name="San Dionisio">
+				San Dionisio
+			</option>
+			</option><option name="Parte Alta de Cuauhtémoc">
+				Parte Alta de Cuauhtémoc
+			</option>
+			</option><option name="Agua Escondida">
+				Agua Escondida
+			</option>
+		</select>
+			<br>
+			<br>
+			<p>Indica el motivo de tu contacto</p>
+			<input type="checkbox" name="tipo">Cotizacion
+			<br>
+			<input type="checkbox" name="tipo">Envio
+			<br>
+			<input type="checkbox" name="tipo">Otro
+			<br><br>
+			<input type="radio" name="sexo">Hombre
+			<br>
+			<input type="radio" name="sexo">Mujer
+			<br>
+			<input type="radio" name="sexo">Otro
+			<br><br>
+			<input type="submit" name="enviar">		
+			<br>
+	</form>
+</section>
+</body>
+</html>

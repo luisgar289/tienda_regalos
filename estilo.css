@@ -1,0 +1,189 @@
+body{
+	background-color: #D39EDB;
+	visibility: 50%;
+	font: sans-serif;
+}
+
+
+ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	background: #59CF7B;
+	overflow: hidden;
+}
+
+nav ul:first-child{
+	border-radius: 15px 15px 15px 15px;
+}
+
+
+li{
+	float: left;
+	font-family: li;
+	font-size: 17px;
+}
+
+li a{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+}
+
+li a:visited{
+	color: whitesmoke;
+}
+
+li a:hover{
+	background-color: #5793E6;
+	color: black;
+	transition: 0.5;
+
+}
+
+#inicio, #novedades, #categorias, #liquidacion, #contacto{
+	border-right: 1.5px solid black;
+}
+
+#carrito{
+	float: right;
+	border-left: 1px solid black;
+}
+
+@font-face{
+	font-family: h1;
+	src: url('font/folklore.otf');
+}
+
+@font-face{
+	font-family: li;
+	src: url('font/CarlaSansBold.ttf');
+}
+
+@font-face{
+	font-family: h5;
+	src: url('font/fearless.ttf');
+}
+
+@font-face{
+	font-family: p;
+	src: url('font/letra.ttf');
+}
+
+@font-face{
+	font-family: table;
+	src: url('font/CarlaSansBold.ttf');
+}
+
+h1{
+	font-family: h1;
+	text-align: center;
+	color: #DE6A28;
+	font-size: 50px;
+}
+
+
+#personalizada{
+	font: sans-serif;
+}
+
+h5{
+	text-align: left;
+	background-color: #E8DB58;
+	font-family: h5;
+	font-size: 18px;
+}
+
+#producto{
+	font-family: p;
+	font-size: 20px;
+	background-color: #E8DB58;
+	display: inline-block;
+
+}
+
+
+#cont{
+	text-align: left;
+
+}
+
+#seccon{
+	margin-top: 550px;
+}
+
+#carousel, #contenedor, #diapositiva img{
+	width: 50%
+}
+
+#carousel, #contenedor, #diapositiva{
+	width: 800px;
+	height: 500px;
+	float: left;
+
+}
+
+#contenedor{
+	width: 800px;
+	height: 500px;
+	overflow: hidden;
+	margin-left: 500px;
+}
+
+.mascara{
+  width: 2400px;
+  height: 500px;
+  animation: cambio 15s;
+  animation-iteration-count: infinite;
+  position: relative;
+
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+table{
+   width: 80%;
+   border: 1px solid #000;
+   font-family: table ;
+   font-size: 13px;
+}
+td{
+   text-align: center;
+   
+   border: 1px solid #000;
+
+   background:#f0e68c ;
+}
+th{
+	background-color: #790;
+	width: 25%;
+   text-align: center;
+   border: 1px solid #000;
+   color: white;
+}
+#tbtz, #tbos, #tbrs, #tbrj{
+	width: 65%;
+}
+
+footer{
+	opacity: 50%;
+	color: #8B0000;
+}
+#envio{
+	background-color: white;
+}
