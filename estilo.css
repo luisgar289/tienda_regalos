@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Benne&family=Open+Sans+Condensed:wght@300&family=Roboto+Slab:wght@300&family=Viaoda+Libre&display=swap");
 
+
 body {
   background-color: #f7f7f7;
   font: sans-serif;
 }
+
 
 .menu,
 nav {
@@ -183,6 +185,5 @@ th {
 footer {
   opacity: 100%;
   color: #032529;
-  text-align: center;
   font-family: "Viaoda Libre", cursive;
 }
